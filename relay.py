@@ -3,7 +3,6 @@ import basicauth
 import hvac
 import json
 import os
-import re
 import requests
 from flask import Flask
 from flask import request
@@ -14,9 +13,6 @@ VAULT_NAMESPACE = os.environ.get('VAULT_NAMESPACE')
 VAULT_SKIP_VERIFY = os.environ.get('VAULT_SKIP_VERIFY')
 
 app = Flask(__name__)
-
-basic_auth_re = re.compile(r'Basic (\S+)')
-basic_auth_decoded_re = re.compile(r'(\S+):(\S+)')
 
 @app.route("/",methods=['POST'])
 def relay_basic_auth():
