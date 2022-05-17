@@ -10,7 +10,6 @@ from flask import request
 
 VAULT_ADDR = os.environ.get('VAULT_ADDR')
 VAULT_NAMESPACE = os.environ.get('VAULT_NAMESPACE')
-VAULT_SKIP_VERIFY = os.environ.get('VAULT_SKIP_VERIFY')
 
 app = Flask(__name__)
 
