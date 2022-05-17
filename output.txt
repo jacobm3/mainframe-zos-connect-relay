@@ -1,0 +1,36 @@
+ubuntu@optiplex9020:~/j/mainframe-zos-connect-relay         2022-05-17 18:46:35
+$ ./curl-command.sh
+{
+  "request_id": "7b545086-a353-67d3-91d1-4c6b1642fba0",
+  "lease_id": "",
+  "renewable": false,
+  "lease_duration": 0,
+  "data": null,
+  "wrap_info": null,
+  "warnings": null,
+  "auth": {
+    "client_token": "hvs.TOKEN-asdfasdfasdfasdfasdf",
+    "accessor": "JmBb6ckIn9hu1pbaqk3T9WMd",
+    "policies": [
+      "db1",
+      "default",
+      "sudo-admin"
+    ],
+    "token_policies": [
+      "db1",
+      "default",
+      "sudo-admin"
+    ],
+    "metadata": {
+      "username": "jacob"
+    },
+    "lease_duration": 2764800,
+    "renewable": true,
+    "entity_id": "3f81ea86-7a0c-eb04-bfe9-05a9ea2a4fc9",
+    "token_type": "service",
+    "orphan": true,
+    "mfa_requirement": null,
+    "num_uses": 0
+  }
+}
+
